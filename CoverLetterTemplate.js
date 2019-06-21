@@ -13,7 +13,7 @@ function onOpen(e) {
   var documentId = DriveApp.getFileById('1TyCLVCmnoLde2ovKg9VWLxj6GwZUkdnz8QaQ1trCHf4').makeCopy().getId();
       
   //Rename the copied file
-  var documentName='Ardavan Hashemzadeh_';// + companyResponse.getResponseText()
+  var documentName='Ardavan Hashemzadeh_' + companyResponse.getResponseText();
   DriveApp.getFileById(documentId).setName(documentName);
 
   //Get the document body as a variable
