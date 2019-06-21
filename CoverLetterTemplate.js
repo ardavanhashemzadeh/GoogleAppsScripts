@@ -1,8 +1,9 @@
-function onOpen(e) {
   // Modified script from: https://www.makeuseof.com/tag/google-docs-scripts-automate/
   // And also inspired by: https://webapps.stackexchange.com/questions/47173/how-to-automatically-open-a-created-text-document-after-it-being-created
+  // I had to add a trigger in order to get it to run upon opening, simply using onOpen(e) didn't seem to cut it.
+
+function onOpen(e) {
   // Display a dialog box for each field you need information for.
-  
   var ui = DocumentApp.getUi();
   var positionResponse = ui.prompt('Position');
   var companyResponse = ui.prompt('Company');
