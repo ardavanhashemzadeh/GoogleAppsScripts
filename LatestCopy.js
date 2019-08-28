@@ -1,3 +1,7 @@
+/*
+Add code to doc and set to automatically execute on opening
+This could be better, for example if it were to scan the document to find keys and prompt for them
+*/
 function onOpen(e) {
   // Modified script from: https://www.makeuseof.com/tag/google-docs-scripts-automate/
   // And also inspired by: https://webapps.stackexchange.com/questions/47173/how-to-automatically-open-a-created-text-document-after-it-being-created
